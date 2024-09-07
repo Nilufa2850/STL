@@ -1,3 +1,32 @@
+template <class T>
+class complex
+{
+    private :
+        T real ;
+        T img ;
+    public :
+        complex ()
+        {
+            real = img = 0 ;
+        }
+        void setReal (T m)
+        {
+            real = m ;
+        }
+        void setImg (T m)
+        {
+            img = m ;
+        }
+        T getReal ()
+        {
+            return real ;
+        }
+        T getImg ()
+        {
+            return img ;
+        }
+        
+} ;
 //using My own complex class
  
     array<complex<int> , 5> a4 ;

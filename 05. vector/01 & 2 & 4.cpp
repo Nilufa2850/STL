@@ -1,3 +1,28 @@
+//4 
+template<class T>
+bool isPrime (T x)
+{
+    if (x<2) //when x==1
+        return false ;
+
+    for (int i=2 ; i<x ; i++)
+        if (x%i==0)
+            return false ;
+    return true ;
+}
+template<class T>
+void delPrime (vector<T> &v)
+{
+    typename vector<T>::iterator it , it1 ;
+    for ( it =v.begin() ; it!=v.end() ; )
+    {
+        if (isPrime(*it))
+            it = v.erase(it) ;
+        else 
+            it++ ;
+    }
+}
+
 //****************************************************************************************
     //4
     vector<int> v4 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} ;

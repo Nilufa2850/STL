@@ -17,7 +17,8 @@ int main ()
     for (i=0,j=0 ; i<obj.size() ; ) 
     {
         v.emplace_back() ;
-        v[j].emplace_back(obj[i++]) ; // i incremented by 1
+        v[j].emplace_back(obj[i++]) ; 
+        // now , i incremented by 1
         while (i < obj.size() && obj[i-1]<obj[i])
         {
             v[j].emplace_back(obj[i]) ;

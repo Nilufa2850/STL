@@ -4,6 +4,27 @@
 #include<vector>
 using namespace std ;
 
+
+/***********************************Sir's Process*******************************************************/
+void q4()
+{
+    list <int> l1={90,30,80,100,20,10,50,60,20,40};
+    vector <int> v1;
+    for(auto x:l1)
+        v1.push_back(x);
+    
+    sort(v1.begin(),v1.end());
+    l1.clear();
+    l1.insert(l1.begin(),v1.begin(),v1.end());
+    for(auto x:l1)
+        cout<<x<<" ";
+    cout<<endl;
+}
+
+/**********************************************************************************************/
+
+
+
 void modify_bubble_sort(list<int>& L) 
 {
     list<int>::iterator it,it1 ;
@@ -60,3 +81,4 @@ int main ()
     cout<<endl ;
 
 }
+
